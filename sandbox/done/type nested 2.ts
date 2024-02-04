@@ -21,10 +21,6 @@ const get_id1 = <T extends { id: any }>(
 const user_id1 = get_id1(user)
 const message_id1 = get_id1(message)
 
-//
-//
-//
-
 interface i_get_id {
   <T extends { id: any }>(data: T): T extends { id: infer U } ? U : never
 }
